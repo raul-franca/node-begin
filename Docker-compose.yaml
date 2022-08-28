@@ -1,0 +1,16 @@
+version: "3"
+services:
+  node:
+    container_name: begin
+    image: "node:16"
+
+    working_dir: /usr/src/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/usr/src/app
+    tty:
+      true #permite acesso a o terminal
+    ports:
+      - "3000:3000"
+#    command: "npm start"

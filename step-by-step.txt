@@ -1,0 +1,13 @@
+
+git:
+    git init
+    git flow init
+        Branch name for production releases: [master] main
+        As outras opções default
+
+docker:
+    docker build -t raulfranca/node-begin .
+    docker run -it --rm --name begin raulfranca/node-begin
+
+    docker rmi raulfranca/node-begin
+    docker rm begin
